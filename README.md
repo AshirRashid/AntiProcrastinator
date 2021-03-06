@@ -1,5 +1,5 @@
 # AntiProcrastinator
-This is my tkinter(python3) implementation of the pomodoro technique.
+This is my tkinter(python3) implementation of the pomodoro timer.
 
 It is based on the tkitner.ttk widget, Notebook.
 
