@@ -15,8 +15,9 @@ Page2:
   
   Output: Using the task time, break time and task name stored in the Task object, a timer is started. When the time for a task or a break ends, the music starts. A pop up appears and when it is closed, the music ends.
   
-  Additional Info: You need to place a .mp3 file in the current dir or it will resort to using the song.mp3 file. If it does not find any .mp3 file, the program will crash. 
-  I tried to make the clock run accurately (which is what I thnk I did), but there is some problem in the diplay(skipping some seconds in between).
+  Additional Info: You need to place a .mp3 file in the current dir or it will resort to using the song.mp3 file. If it does not find any .mp3 file, the program will crash.
+  
+  An attempt to make the clock as accurate as possible(not relying on the assumption that the processing in every frame would take no time) resulted in a problem in the diplay(skipping some seconds in between) since the clock is not in sync with the main loop.
   
 Page3:
   
@@ -24,7 +25,7 @@ Page3:
 
   Output: The output shows information related to the tasks input
   
-  Additional Info: To show a longer history, I was thinking of using a pickle file as a FIFO stack.
+  Additional Info: To show a longer history, I was thinking of using a pickle file as a FIFO queue.
 
 Notebook:
    
